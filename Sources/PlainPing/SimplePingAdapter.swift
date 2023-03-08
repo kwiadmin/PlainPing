@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if !COCOAPODS
+import SimplePing
+#endif
 
 protocol SimplePingAdapterDelegate {
     func didSendPing()
@@ -18,7 +21,7 @@ class SimplePingAdapter: NSObject, SimplePingDelegate {
     
     var delegate:SimplePingAdapterDelegate?
     
-    fileprivate var pinger:SimplePing!
+    fileprivate var pinger: SimplePing!
     fileprivate var timeoutTimer:Timer?
     fileprivate var timeoutDuration:TimeInterval = 3
 

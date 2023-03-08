@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "8.0", :osx => "10.11" }
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Sources/PlainPing/*', 'Sources/SimplePing/include/*', 'Sources/SimplePing/*'
+
   #s.resource_bundles = {
   #  'PlainPing' => ['Pod/Assets/*.png']
   #}
