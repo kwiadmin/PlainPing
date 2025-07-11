@@ -19,7 +19,7 @@ protocol SimplePingAdapterDelegate: class {
 
 class SimplePingAdapter: NSObject, SimplePingDelegate {
     
-    weak var delegate: SimplePingAdapterDelegate?
+    var delegate: SimplePingAdapterDelegate?
     
     fileprivate var pinger: SimplePing!
     fileprivate var timeoutTimer:Timer?
